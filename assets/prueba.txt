@@ -1,0 +1,31 @@
+•	2.2. ¿Qué mecanismos de seguridad incluirías en la aplicación para garantizar la protección del acceso a los datos?
+•	RTA: Implementar un proxy, implementar doble validación de usuario
+2.3. ¿Qué estrategia de escalabilidad recomendarías para la aplicación considerando que el crecimiento proyectado será de 1,000,000 de clientes por año?
+•	RTA: Migraría datos que se consideren antiguos a una tabla de respaldo, realizaría distintos tenant por sede o locación. 
+2.4. ¿Qué patrón o patrones de diseño recomendarías para esta solución y cómo se implementarían? (Justifique)
+•	RTA:  Bridge: se separan las funcionalidades en clases pequeñas , Composite: se usaría estructura de árbol para trabajarlos como objetos distintos.
+2.5. ¿Qué recomendaciones harías para optimizar el manejo y la persistencia de datos de la aplicación, teniendo en cuenta que esta aplicación tiene una alta transaccionalidad?
+•	RTA: Optimizar queries.
+
+3.1. Explica la diferencia entre un router y un switch. ¿Cuándo usarías cada uno?
+•	RTA: el router permite segmentación de red y un switch permite conexiones al mismo segmento de red.
+3.2. Describe las siete capas del modelo OSI y menciona brevemente la función principal de cada una
+•	RTA: física, datos, red, transporte, sesión, presentación, aplicación 
+3.3. Explica las diferencias entre los protocolos TCP y UDP. Dar un ejemplo de cuándo usarías cada uno?
+•	RTA: TCP es protocolo con confinación, es protocolo sin UDP.
+3.4. ¿Qué es una máscara de subred y cómo se utiliza para dividir una red en subredes más pequeñas?
+•	RTA:
+3.5. ¿Puedes mencionar algunos protocolos de enrutamiento dinámico y explicar brevemente cómo funcionan?
+•	RTA:
+
+
+
+
+Crear usuario
+php artisan make:filament-user
+
+Migrar
+ php artisan migrate
+
+Correr proyecto 
+  php artisan serve
